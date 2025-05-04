@@ -2,15 +2,16 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiChevronUp } from "react-icons/fi";
+import { useTranslation } from "../../hooks/translationContext";
 
 const FaqSection = ({ faqItems }) => {
+  const {translate} = useTranslation();
   const [openedIndex, setOpenedIndex] = useState(null);
 
   const toggleItem = (index) => {
     setOpenedIndex(openedIndex === index ? null : index);
   };
 
-  // Animation variants
   const container = {
     hidden: { opacity: 0 },
     visible: {
@@ -33,10 +34,10 @@ const FaqSection = ({ faqItems }) => {
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Frequently Asked Questions
+            {translate("main.Frequently_asked_questions")}
           </h1>
           <p className="text-base md:text-xl lg:text-2xl text-gray-600">
-            Find quick answers to the most common questions about using our app and services.
+            {translate("main.Find_quick_answers")}
           </p>
         </motion.div>
 

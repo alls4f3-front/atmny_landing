@@ -1,6 +1,12 @@
+import { useEffect } from 'react';
 import { ParallaxText } from '../../components/gen/ParallaxText'
+import { useTranslation } from '../../hooks/translationContext'
 
 const ServicesSection = ({ services }) => {
+  useEffect(() => {
+    console.log(services)
+  }, [services])
+  const { language } = useTranslation();
   const repeatedData = Array(10).fill(services).flat()
   return (
     <section className="" id="services">
@@ -10,7 +16,7 @@ const ServicesSection = ({ services }) => {
           baseVelocity={5}
           // pauseOnHover
           wrapperClassName={
-            "!w-[95%] mx-auto overflow-hidden flex items-center justify-around gap-12 mt-20"
+            "!w-[95%] mx-auto overflow-hidden flex items-center justify-center gap-12 mt-20"
           }
         >
           {repeatedData.map((service, index) => (

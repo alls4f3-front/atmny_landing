@@ -1,8 +1,132 @@
 {
-  "about_us": "About Us",
-  "services": "Services",
-  "why_choose_us": "Why Choose Us",
-  "blog": "Blog",
-  "contact": "Contact",
-  "download_app": "Download App"
+  "main": {
+    "about_us": "About Us",
+    "services": "Services",
+    "why_choose_us": "Why Choose Us",
+    "blog": "Blog",
+    "contact": "Contact",
+    "download_app": "Download App",
+    "contact_us": "Contact Us",
+    "Frequently_asked_questions": "Frequently Asked Questions",
+    "Find_quick_answers": "Find quick answers to the most common questions about using our app and services.",
+    "all_your_daily_Services": "All Your Daily Services",
+    "in_one_smart_app": "in One Smart App",
+    "order_food": "Order food, book a ride, get your car washed, and enjoy homemade meals all in one place, right from your phone.",
+    "get_on_ios": "Get it on iOS",
+    "get_on_android": "Get it on Android",
+    "WhyChooseOurApp": "Why Choose Our App",
+    "WhyChooseOurAppDescription": "Experience seamless service with these amazing features designed just for you.",
+    "latest_from_our_blog": "Latest From Our Blog",
+    "tips_updates_and_insights": "Tips, updates, and insights to help you make the most of our app and services."
+  },
+  "services": {
+    "service1title": "Home-Cooked Meals",
+    "service1description": "Enjoy fresh, homemade dishes prepared by local chefs and delivered to your doorstep.",
+    "service2title": "Restaurant Food Delivery",
+    "service2description": "Order delicious meals from your favorite local restaurants with just a few taps.",
+    "service3title": "Taxi & Ride Booking",
+    "service3description": "Book a reliable ride anytime, anywhere — fast, safe, and affordable transportation.",
+    "service4title": "Car Wash Service",
+    "service4description": "Get your car cleaned at home or office with our on-demand car wash professionals."
+  },
+  "detailsServices": {
+    "service1": {
+      "title": "Home-Cooked Meals",
+      "subtitle": "Fresh homemade food",
+      "description": "Enjoy fresh, homemade dishes prepared by local chefs and delivered to your doorstep.",
+      "howItWorks": [
+        "Users browse home chef menus featuring traditional and homemade dishes",
+        "Orders are placed directly from the app with scheduled delivery times",
+        "Meals are made fresh with a personal touch"
+      ],
+      "whyUseful": "Perfect for users craving traditional food, healthier options, or supporting local cooks."
+    },
+    "service2": {
+      "title": "Restaurant Food Delivery",
+      "subtitle": "Your favorite restaurants",
+      "description": "Order delicious meals from your favorite local restaurants with just a few taps.",
+      "howItWorks": [
+        "Browse menus from local restaurants",
+        "Place your order with special instructions",
+        "Track your delivery in real-time"
+      ],
+      "whyUseful": "Get restaurant-quality meals delivered fast to your home or office."
+    },
+    "service3": {
+      "title": "Taxi & Ride Booking",
+      "subtitle": "Safe and reliable",
+      "description": "Book a reliable ride anytime, anywhere — fast, safe, and affordable transportation.",
+      "howItWorks": [
+        "Enter your pickup and drop-off locations",
+        "Choose your vehicle type",
+        "Your driver arrives in minutes"
+      ],
+      "whyUseful": "Perfect for quick trips around town or scheduled appointments."
+    },
+    "service4": {
+      "title": "Car Wash Service",
+      "subtitle": "Professional cleaning",
+      "description": "Get your car cleaned at home or office with our on-demand car wash professionals.",
+      "howItWorks": [
+        "Schedule a wash at your preferred time",
+        "Our team arrives with all necessary equipment",
+        "Your car is cleaned while you work or relax"
+      ],
+      "whyUseful": "Maintain your car's appearance without wasting your time."
+    }
+  },
+  "features": {
+    "feature1": {
+      "title": "Smart Search & Filtering",
+      "description": "Quickly find what you need with intelligent search, advanced filters, and category-based navigation."
+    },
+    "feature2": {
+      "title": "Ratings, Reviews & Feedback",
+      "description": "Share your experience and read real feedback from other users before choosing a service."
+    },
+    "feature3": {
+      "title": "Smooth Booking & Ordering",
+      "description": "A seamless process for placing orders or booking services — with real-time status updates."
+    },
+    "feature4": {
+      "title": "In-App Chat & Support",
+      "description": "Communicate directly with service providers or our support team without leaving the app."
+    },
+    "feature5": {
+      "title": "Smart Search & Filtering",
+      "description": "Quickly find what you need with intelligent search, advanced filters, and category-based navigation."
+    },
+    "feature6": {
+      "title": "Secure Authentication",
+      "description": "Sign up and log in safely with multi-layered security and verification steps."
+    }
+  },
+  "faqItems": {
+    "question1": "How do I create an account?",
+    "answer1": "Sign up and log in safely with multi-layered security and verification steps.",
+    "question2": "Is my personal information safe?",
+    "answer2": "Sign up and log in safely with multi-layered security and verification steps.",
+    "question3": "Can I order from multiple services at once?",
+    "answer3": "Sign up and log in safely with multi-layered security and verification steps.",
+    "question4": "How can I track my orders and bookings?",
+    "answer4": "Sign up and log in safely with multi-layered security and verification steps.",
+    "question5": "What should I do if I need help?",
+    "answer5": "Sign up and log in safely with multi-layered security and verification steps."
+  },
+  "blogs": {
+    "blog1": {
+      "title": "How to Get the Best Out of Our Multi-Service App",
+      "description": "Discover smart tips and tricks to maximize your experience with food delivery, rides, and more — all from one app!"
+    },
+    "blog2": {
+      "title": "How to Get the Best Out of Our Multi-Service App",
+      "description": "Discover smart tips and tricks to maximize your experience with food delivery, rides, and more — all from one app!"
+    }
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "message": "Sorry, the page you are looking for does not exist or has been moved.",
+    "backHome": "Back to Home",
+    "helpText": "If you think this is a mistake, please contact support"
+  }
 }

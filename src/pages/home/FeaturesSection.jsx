@@ -1,10 +1,12 @@
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
+import { useTranslation } from "../../hooks/translationContext";
 
 
 
 const FeaturesSection = ({ features }) => {
-  const [ref, inView] = useInView({
+    const { translate } = useTranslation();
+    const [ref, inView] = useInView({
     triggerOnce: false,
     threshold: 0.1
   });
@@ -51,13 +53,13 @@ const FeaturesSection = ({ features }) => {
             className="text-3xl md:text-4xl lg:text-6xl font-bold text-gray-900 mb-6 heading"
             variants={item}
           >
-            Why Choose Our App
+            {translate("main.WhyChooseOurApp")}
           </motion.h1>
           <motion.p
             className="text-base md:text-xl lg:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto"
             variants={item}
           >
-            Experience seamless service with these amazing features designed just for you
+            {translate("main.WhyChooseOurAppDescription")}
           </motion.p>
         </motion.div>
 
@@ -87,7 +89,6 @@ export default FeaturesSection ;
 
 
 
-// Component Definitions
 
 
 
@@ -110,7 +111,6 @@ const FeatureCard = ({ icon, title, description }) => {
         transition: { type: "spring", stiffness: 300 }
       }}
     >
-      {/* Animated accent bar */}
       <motion.div
         className="absolute top-6 -left-[2px] bg-Primary rounded-s-3xl w-[4px] h-16"
         initial={{ scaleY: 0, originY: 0 }}
@@ -119,7 +119,6 @@ const FeatureCard = ({ icon, title, description }) => {
       />
 
       <div className='flex flex-col items-start justify-start gap-2 bg-PrimaryDark/10 w-full h-full rounded-2xl p-4 py-8 pb-16 hover:bg-PrimaryDark/15 transition-all duration-300'>
-        {/* Icon with pop effect */}
         <motion.div
           className="text-black mb-4 p-3 rounded-2xl bg-Primary/20"
           whileHover={{
@@ -132,7 +131,6 @@ const FeatureCard = ({ icon, title, description }) => {
           {icon}
         </motion.div>
 
-        {/* Title with underline animation */}
         <motion.h3
           className="text-lg md:text-xl lg:text-2xl font-semibold heading text-PrimaryDark relative inline-block"
           whileHover={{
@@ -143,7 +141,6 @@ const FeatureCard = ({ icon, title, description }) => {
 
         </motion.h3>
 
-        {/* Description text */}
         <motion.p
           className="text-TextDark text-base md:text-lg lg:text-xl"
           initial={{ opacity: 0 }}

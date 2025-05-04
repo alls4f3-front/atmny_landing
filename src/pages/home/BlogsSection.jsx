@@ -1,5 +1,6 @@
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
+import { useTranslation } from "../../hooks/translationContext";
 
   const BlogCard = ({ image, title, description }) => {
   const [ref, inView] = useInView({
@@ -19,7 +20,6 @@ import { motion } from "framer-motion";
         boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)"
       }}
     >
-      {/* Image with zoom effect */}
       <motion.div className="w-full h-96 overflow-hidden" data-cursor-img={image} >
         <motion.img
           src={image}
@@ -31,7 +31,6 @@ import { motion } from "framer-motion";
         />
       </motion.div>
 
-      {/* Content with staggered animation */}
       <motion.div
         className="p-6"
         initial="hidden"
@@ -75,7 +74,6 @@ import { motion } from "framer-motion";
           {description}
         </motion.p>
 
-        {/* Read More Button */}
         <motion.div
           variants={{
             hidden: { opacity: 0 },
@@ -94,6 +92,7 @@ import { motion } from "framer-motion";
 
 
 const BlogsSection = ({ blogs }) => {
+  const { translate } = useTranslation();
   const [ref, inView] = useInView({
     triggerOnce: false,
     threshold: 0.1
@@ -132,10 +131,10 @@ const BlogsSection = ({ blogs }) => {
           }}
         >
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Latest From Our Blog
+            {translate("blogs.blog1.title")}
           </h1>
           <p className="text-base md:text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto">
-            Tips, updates, and insights to help you make the most of our app and services.
+            {translate("blogs.blog1.description")}
           </p>
         </motion.div>
 
